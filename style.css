@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(167, 149, 180);
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;    
+}
+
+#logo-friends {
+    margin-bottom: 5px;    
+}
+
+#dados {
+    text-align: center;
+    line-height: 2;
+}
+
+form label {    
+    cursor: pointer;
+}
+
+#form-nome {
+    background-color: rgb(245, 242, 228);
+    border-radius: 10px;
+}
+
+#btn-btn-enviar {
+    background-color: rgb(239, 226, 152);
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px 1px;
+    text-align: center;
+}
+
+#quiz {
+    display: none;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#p2, #p3, #p4, #p5 {
+    display: none;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 360px;
+    height: 350px;
+    margin: auto;
+    box-shadow: 5px 5px 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: bold;
+    font-size: 15px;
+}
+

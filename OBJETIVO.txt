@@ -1,0 +1,14 @@
+[OBJETIVO]
+Escreva um quiz de friends (peça para o chatgpt gerar as perguntas) para testar seus conhecimentos.
+
+* Seu quiz deverá perguntar dados básicos do participante:
+  - nome (texto);
+  - sexo (marcação única);
+  - personagens favoritos (caixas de marcação múltipla);
+
+
+* Seu quiz deverá conter um formulário contendo 5 perguntas de única escolha (abcde).
+
+* No final, deve ter um botão para enviar as respostas do usuário para uma função javasript:
+  => a função deverá computar a nota do usuário (quantidade de acertos)
+  => no final exibir via função ALERT a seguinte mensagem: "<Fulano>, você acertou <100%>. <"Parabéns!" ou "Assista mais friends..." ou "quase lá">".

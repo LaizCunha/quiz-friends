@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>    
+    <title>Quiz - Friends</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <header>
+        <h1>QUIZ</h1>
+        <h4>TESTE SEUS CONHECIMENTOS SOBRE</h2>
+            <img id="logo-friends" src="/img/logo-friends.png" alt="nome do seriado friends">
+    </header>
+    <section>
+        <form id="dados" onsubmit="onFormDadosSubmit(event)">
+            <div id="form-nome">
+                <label for="ipt-nome">Nome:</label> <br>
+                <input id="ipt-nome" type="text" onchange="onInputChange(event)"> <br>
+            </div>          
+            <div id="form-genero">
+                <label>Gênero:</label> <br>
+                <input id="rad-sex-m" type="radio" value="M" name="sexo" onchange="onInputChange(event)"><label>Masculino</label>
+                <input type="radio" name="sexo" id="rad-sex-f" value="F" onchange="onInputChange(event)"> <label>Feminino</label>
+                <input type="radio" name="sexo" id="rad-sex-o" onchange="onInputChange(event)" value="O"><label>Outro</label> <br>
+            </div>
+            <div id="form-personagens">
+                <label for="ipt-personagem">Personagens favoritos:</label><br>
+                <input type="checkbox" name="personagens" id="chk-joey" value="Joey" onchange="onInputChange(event)"> <label for="chk-joey">Joey</label>
+                <input type="checkbox" name="personagens" id="chk-monica" value="Monica" onchange="onInputChange(event)"> <label for="chk-monica">Mônica</label>
+                <input type="checkbox" name="personagens" id="chk-ross" value="Ross" onchange="onInputChange(event)"> <label for="chk-ross">Ross</label>
+                <input type="checkbox" name="personagens" id="chk-rachel" value="Rachel" onchange="onInputChange(event)"><label for="chk-rachel">Rachel</label><br>
+                <input type="checkbox" name="personagens" id="chk-chandler" value="Chandler" onchange="onInputChange(event)"><label for="chk-chandler">Chandler</label>
+                <input type="checkbox" name="personagens" id="chk-phoebe" value="Phoebe" onchange="onInputChange(event)"><label for="chk-phoebe">Phoebe</label> <br>
+            </div>    
+            <div id="btn-enviar">
+                <button id="btn-btn-enviar" onclick="passarParaFormQuiz()">Enviar</button>
+            </div>     
+        </form>
+
+        <form id="quiz" onsubmit="onFormQuizSubmit(event)">
+            <div id="p1">
+                <p>Pergunta 01 - Qual personagem de "Friends" é conhecido por ser obcecado por limpeza?</p>
+                <input type="radio" name="p1" id="p1-a" value="false"><label for="p1-a">A - Ross</label><br>
+                <input type="radio" name="p1" id="p" value="false">B - Chandler <br>
+                <input type="radio" name="p1" id="p1-c" value="false">C - Joey <br>
+                <input type="radio" name="p1" id="p1-d" value="false">D - Phoebe <br>
+                <input type="radio" name="p1" id="p1-e" value="true">E - Monica <br><br>
+            </div>
+            <div id="p2">
+                <p>Pergunta 02 - Qual desses personagens nunca morou no apartamento de Monica?</p>
+                <input type="radio" name="p2" id="p2-a" value="false">A - Rachel <br>
+                <input type="radio" name="p2" id="p2-b" value="false">B - Chandler <br>
+                <input type="radio" name="p2" id="p2-c" value="false">C - Ross <br>
+                <input type="radio" name="p2" id="p2-d" value="true">D - Joey <br>
+                <input type="radio" name="p2" id="p2-e" value="false">E - Phoebe <br><br>
+            </div>
+            <div id="p3">
+                <p>Pergunta 03 - Qual é o nome do café frequentado pelos personagens principais?</p>
+                <input type="radio" name="p3" id="p3-a" value="true">A - Café Central Perk <br>
+                <input type="radio" name="p3" id="p3-b" value="false">B - Café Java Joe <br>
+                <input type="radio" name="p3" id="p3-c" value="false">C - Café Espresso Euphoria <br>
+                <input type="radio" name="p3" id="p3-d" value="false">D - Café Mocha Loca <br>
+                <input type="radio" name="p3" id="p3-e" value="false">E - Café Cappuccino Corner <br><br>
+            </div>
+            <div id="p4">
+                <p>Pergunta 04 - Qual personagem é conhecido por sua carreira na área de moda?</p>
+                <input type="radio" name="p4" id="p4-a" value="false">A - Chandler<br>
+                <input type="radio" name="p4" id="p4-b" value="false">B - Joey <br>
+                <input type="radio" name="p4" id="p4-c" value="false">C - Ross <br>
+                <input type="radio" name="p4" id="p4-d" value="false">D - Monica <br>
+                <input type="radio" name="p4" id="p4-e" value="true">E - Rachel <br><br>
+            </div>
+            <div id="p5">
+                <p>Pergunta 05 - Qual personagem é paleontólogo?</p>
+                <input type="radio" name="p5" id="p5-a" value="false">A - Joey <br>
+                <input type="radio" name="p5" id="p5-b" value="false">B - Monica <br>
+                <input type="radio" name="p5" id="p5-c" value="false">C - Phoebe <br>
+                <input type="radio" name="p5" id="p5-d" value="false">D - Rachel <br>
+                <input type="radio" name="p5" id="p5-e" value="true">E - Ross <br><br>
+            </div>
+            <div id="btn-salvar">
+                <button id="btn-antes" onclick="pgtAnterior(event)"><<</button>
+                <button id="btn-depois" onclick="pgtPosterior(event)">>></button>
+            </div>        
+        </form>
+
+    </section>
+    <footer>
+        <p> * Para os amantes de Friends *</p>
+    </footer>
+    
+</body>
+</html>
