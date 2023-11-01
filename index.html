@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js"></script>    
+    <script defer src="script1.js"></script>    
     <title>Quiz - Friends</title>  
+    <link rel="shortcut icon" href="/img/espelho2.png">
     <link rel="stylesheet" href="style.css">  
 </head>
 <body>
@@ -35,7 +36,7 @@
                 <input type="checkbox" name="personagens" id="chk-phoebe" value="Phoebe" onchange="onInputChange(event)"><label for="chk-phoebe">Phoebe</label> <br>
             </div>    
             <div id="btn-enviar">
-                <button id="btn-btn-enviar" onclick="passarParaFormQuiz()">Enviar</button>
+                <button id="btn-btn-enviar" onclick="salvarDadosForm()">Enviar</button>
             </div>     
         </form>
 
@@ -43,48 +44,54 @@
             <div id="p1">
                 <p>Pergunta 01 - Qual personagem de "Friends" é conhecido por ser obcecado por limpeza?</p>
                 <input type="radio" name="p1" id="p1-a" value="false"><label for="p1-a">A - Ross</label><br>
-                <input type="radio" name="p1" id="p" value="false">B - Chandler <br>
-                <input type="radio" name="p1" id="p1-c" value="false">C - Joey <br>
-                <input type="radio" name="p1" id="p1-d" value="false">D - Phoebe <br>
-                <input type="radio" name="p1" id="p1-e" value="true">E - Monica <br><br>
+                <input type="radio" name="p1" id="p1-b" value="false"><label for="p1-b">B- Chandler</label><br>
+                <input type="radio" name="p1" id="p1-c" value="false"><label for="p1-c">C - Joey</label><br>
+                <input type="radio" name="p1" id="p1-d" value="false"><label for="p1-d">D - Phoebe</label><br>
+                <input type="radio" name="p1" id="p1-e" value="true"><label for="p1-e">E - Monica</label><br><br>
             </div>
             <div id="p2">
                 <p>Pergunta 02 - Qual desses personagens nunca morou no apartamento de Monica?</p>
-                <input type="radio" name="p2" id="p2-a" value="false">A - Rachel <br>
-                <input type="radio" name="p2" id="p2-b" value="false">B - Chandler <br>
-                <input type="radio" name="p2" id="p2-c" value="false">C - Ross <br>
-                <input type="radio" name="p2" id="p2-d" value="true">D - Joey <br>
-                <input type="radio" name="p2" id="p2-e" value="false">E - Phoebe <br><br>
+                <input type="radio" name="p2" id="p2-a" value="false"><label for="p2-a">A - Rachel</label><br>
+                <input type="radio" name="p2" id="p2-b" value="false"><label for="p2-b">B - Chandler</label><br>
+                <input type="radio" name="p2" id="p2-c" value="false"><label for="p2-c">C - Ross</label><br>
+                <input type="radio" name="p2" id="p2-d" value="true"><label for="p2-d">D - Joey</label><br>
+                <input type="radio" name="p2" id="p2-e" value="false"><label for="p2-e">E - Phoebe</label><br><br>
             </div>
             <div id="p3">
                 <p>Pergunta 03 - Qual é o nome do café frequentado pelos personagens principais?</p>
-                <input type="radio" name="p3" id="p3-a" value="true">A - Café Central Perk <br>
-                <input type="radio" name="p3" id="p3-b" value="false">B - Café Java Joe <br>
-                <input type="radio" name="p3" id="p3-c" value="false">C - Café Espresso Euphoria <br>
-                <input type="radio" name="p3" id="p3-d" value="false">D - Café Mocha Loca <br>
-                <input type="radio" name="p3" id="p3-e" value="false">E - Café Cappuccino Corner <br><br>
+                <input type="radio" name="p3" id="p3-a" value="true"><label for="p3-a">A - Café Central Perk</label><br>
+                <input type="radio" name="p3" id="p3-b" value="false"><label for="p3-b">B - Café Java Joe</label><br>
+                <input type="radio" name="p3" id="p3-c" value="false"><label for="p3-c">C - Café Espresso Euphoria</label><br>
+                <input type="radio" name="p3" id="p3-d" value="false"><label for="p3-d">D - Café Mocha Loca</label><br>
+                <input type="radio" name="p3" id="p3-e" value="false"><label for="p3-e">E - Café Cappuccino Corner</label><br><br>
             </div>
             <div id="p4">
                 <p>Pergunta 04 - Qual personagem é conhecido por sua carreira na área de moda?</p>
-                <input type="radio" name="p4" id="p4-a" value="false">A - Chandler<br>
-                <input type="radio" name="p4" id="p4-b" value="false">B - Joey <br>
-                <input type="radio" name="p4" id="p4-c" value="false">C - Ross <br>
-                <input type="radio" name="p4" id="p4-d" value="false">D - Monica <br>
-                <input type="radio" name="p4" id="p4-e" value="true">E - Rachel <br><br>
+                <input type="radio" name="p4" id="p4-a" value="false"><label for="p4-a">A - Chandler</label><br>
+                <input type="radio" name="p4" id="p4-b" value="false"><label for="p4-b">B - Joey</label><br>
+                <input type="radio" name="p4" id="p4-c" value="false"><label for="p4-c">C - Ross</label><br>
+                <input type="radio" name="p4" id="p4-d" value="false"><label for="p4-d">D - Monica</label><br>
+                <input type="radio" name="p4" id="p4-e" value="true"><label for="p4-e">E - Rachel</label><br><br>
             </div>
             <div id="p5">
                 <p>Pergunta 05 - Qual personagem é paleontólogo?</p>
-                <input type="radio" name="p5" id="p5-a" value="false">A - Joey <br>
-                <input type="radio" name="p5" id="p5-b" value="false">B - Monica <br>
-                <input type="radio" name="p5" id="p5-c" value="false">C - Phoebe <br>
-                <input type="radio" name="p5" id="p5-d" value="false">D - Rachel <br>
-                <input type="radio" name="p5" id="p5-e" value="true">E - Ross <br><br>
+                <input type="radio" name="p5" id="p5-a" value="false"><label for="p5-a">A - Joey</label><br>
+                <input type="radio" name="p5" id="p5-b" value="false"><label for="p5-b">B - Monica</label><br>
+                <input type="radio" name="p5" id="p5-c" value="false"><label for="p5-c">C - Phoebe</label><br>
+                <input type="radio" name="p5" id="p5-d" value="false"><label for="p5-d">D - Rachel</label><br>
+                <input type="radio" name="p5" id="p5-e" value="true"><label for="p5-e">E - Ross</label><br><br>
             </div>
             <div id="btn-salvar">
                 <button id="btn-antes" onclick="pgtAnterior(event)"><<</button>
                 <button id="btn-depois" onclick="pgtPosterior(event)">>></button>
+                <button id="btn-btn-salvar" onclick="mostrarResultado(event)" style="display: none;">Salvar</button>
             </div>        
         </form>
+        <div id="resultado" style="display: none;">
+            <p id="saudacao">PARABÉNS!</p>
+            <p id="acertos">Você teve x% de acertos.</p>
+            <p id="regarregar">Recarregue a página para recomeçar!</p>                        
+        </div>
 
     </section>
     <footer>
