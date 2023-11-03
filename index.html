@@ -16,18 +16,18 @@
     </header>
     <section>
         <form id="dados" onsubmit="onFormDadosSubmit(event)">
-            <div id="form-nome">
-                <label for="ipt-nome" name="nome">Nome:</label> <br>
+            <div id="form-nome" class="form-item">
+                <label for="ipt-nome" name="nome"><u>NOME:</u></label> <br>
                 <input id="ipt-nome" type="text" name="nome"> <br>
             </div>          
-            <div id="form-genero">
-                <label>Gênero:</label> <br>
+            <div id="form-genero" class="form-item">
+                <label><u>GÊNERO:</u></label> <br>
                 <input id="rad-sex-m" type="radio" value="M" name="genero"><label for="rad-sex-m">Masculino</label>
                 <input type="radio" name="genero" id="rad-sex-f" value="F"> <label for="rad-sex-f">Feminino</label>
                 <input type="radio" name="genero" id="rad-sex-o" value="O"><label for="rad-sex-o">Outro</label> <br>
             </div>
-            <div id="form-personagens">
-                <label for="ipt-personagem">Personagens favoritos:</label><br>
+            <div id="form-personagens" class="form-item">
+                <label for="ipt-personagem"><u>PERSONAGENS FAVORITOS:</u></label><br>
                 <input type="checkbox" name="personagens" id="chk-joey" value="Joey"> <label for="chk-joey">Joey</label>
                 <input type="checkbox" name="personagens" id="chk-monica" value="Monica"> <label for="chk-monica">Mônica</label>
                 <input type="checkbox" name="personagens" id="chk-ross" value="Ross"> <label for="chk-ross">Ross</label>
@@ -35,8 +35,8 @@
                 <input type="checkbox" name="personagens" id="chk-chandler" value="Chandler"><label for="chk-chandler">Chandler</label>
                 <input type="checkbox" name="personagens" id="chk-phoebe" value="Phoebe"><label for="chk-phoebe">Phoebe</label> <br>
             </div>    
-            <div id="btn-enviar">
-                <button id="btn-btn-enviar" type="submit">Iniciar</button>
+            <div id="btn-iniciar">
+                <button id="btn-btn-iniciar" type="submit">Iniciar</button>
             </div>     
         </form>
 
@@ -47,7 +47,7 @@
                 <input type="radio" name="p1" id="p1-b" value="false"><label for="p1-b">B- Chandler</label><br>
                 <input type="radio" name="p1" id="p1-c" value="false"><label for="p1-c">C - Joey</label><br>
                 <input type="radio" name="p1" id="p1-d" value="false"><label for="p1-d">D - Phoebe</label><br>
-                <input type="radio" name="p1" id="p1-e" value="true"><label for="p1-e">E - Monica</label><br><br>
+                <input type="radio" name="p1" id="p1-e" value="true"><label for="p1-e">E - Monica</label>
             </div>
             <div id="p2">
                 <p>Pergunta 02 - Qual desses personagens nunca morou no apartamento de Monica?</p>
@@ -55,7 +55,7 @@
                 <input type="radio" name="p2" id="p2-b" value="false"><label for="p2-b">B - Chandler</label><br>
                 <input type="radio" name="p2" id="p2-c" value="false"><label for="p2-c">C - Ross</label><br>
                 <input type="radio" name="p2" id="p2-d" value="true"><label for="p2-d">D - Joey</label><br>
-                <input type="radio" name="p2" id="p2-e" value="false"><label for="p2-e">E - Phoebe</label><br><br>
+                <input type="radio" name="p2" id="p2-e" value="false"><label for="p2-e">E - Phoebe</label>
             </div>
             <div id="p3">
                 <p>Pergunta 03 - Qual é o nome do café frequentado pelos personagens principais?</p>
@@ -63,7 +63,7 @@
                 <input type="radio" name="p3" id="p3-b" value="false"><label for="p3-b">B - Café Java Joe</label><br>
                 <input type="radio" name="p3" id="p3-c" value="false"><label for="p3-c">C - Café Espresso Euphoria</label><br>
                 <input type="radio" name="p3" id="p3-d" value="false"><label for="p3-d">D - Café Mocha Loca</label><br>
-                <input type="radio" name="p3" id="p3-e" value="false"><label for="p3-e">E - Café Cappuccino Corner</label><br><br>
+                <input type="radio" name="p3" id="p3-e" value="false"><label for="p3-e">E - Café Cappuccino Corner</label>
             </div>
             <div id="p4">
                 <p>Pergunta 04 - Qual personagem é conhecido por sua carreira na área de moda?</p>
@@ -71,7 +71,7 @@
                 <input type="radio" name="p4" id="p4-b" value="false"><label for="p4-b">B - Joey</label><br>
                 <input type="radio" name="p4" id="p4-c" value="false"><label for="p4-c">C - Ross</label><br>
                 <input type="radio" name="p4" id="p4-d" value="false"><label for="p4-d">D - Monica</label><br>
-                <input type="radio" name="p4" id="p4-e" value="true"><label for="p4-e">E - Rachel</label><br><br>
+                <input type="radio" name="p4" id="p4-e" value="true"><label for="p4-e">E - Rachel</label>
             </div>
             <div id="p5">
                 <p>Pergunta 05 - Qual personagem é paleontólogo?</p>
@@ -79,7 +79,7 @@
                 <input type="radio" name="p5" id="p5-b" value="false"><label for="p5-b">B - Monica</label><br>
                 <input type="radio" name="p5" id="p5-c" value="false"><label for="p5-c">C - Phoebe</label><br>
                 <input type="radio" name="p5" id="p5-d" value="false"><label for="p5-d">D - Rachel</label><br>
-                <input type="radio" name="p5" id="p5-e" value="true"><label for="p5-e">E - Ross</label><br><br>
+                <input type="radio" name="p5" id="p5-e" value="true"><label for="p5-e">E - Ross</label>
             </div>
             <div id="btn-salvar">
                 <button id="btn-antes" type="button" onclick="pgtAnterior(event)"><<</button>
@@ -90,12 +90,13 @@
         <div id="resultado" style="display: none;" >
             <p id="saudacao">PARABÉNS!</p>
             <p id="acertos">Você teve x% de acertos.</p>
-            <p id="regarregar">Recarregue a página para recomeçar!</p>                        
+            <p id="regarregar">Recarregue a página para recomeçar!</p>
+            <img src="img/friends-personagens.jpg" alt="personagens de friends desenhados">                        
         </div>
 
     </section>
     <footer>
-        <p> * Para os amantes de Friends *</p>
+        <p> <strong>* Para os amantes de Friends *</strong></p>
     </footer>
     
 </body>

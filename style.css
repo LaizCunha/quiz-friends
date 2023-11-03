@@ -1,6 +1,7 @@
 body {
     background-color: rgb(167, 149, 180);
-    font: normal 15pt Arial;
+    font-size: 15pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -13,46 +14,61 @@ header {
 
 #dados {
     text-align: center;
-    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    line-height: 1.6;    
+}
+
+.form-item{
+    margin: 20px;
 }
 
 form label {    
     cursor: pointer;
 }
 
-#form-nome {
-    background-color: rgb(245, 242, 228);
-    border-radius: 10px;
-}
-
-#btn-btn-enviar {
-    background-color: rgb(239, 226, 152);
+#btn-btn-iniciar, #btn-antes, #btn-depois, #btn-btn-salvar{
+    background-color: rgb(167, 149, 180);
+    margin-top: 20px;
     width: 80px;
     height: 30px;
     border-radius: 5px;
     border: 1px 1px;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
 }
-
 
 #quiz {
     display: none;
     text-align: center;
     line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
 }
 
 #p2, #p3, #p4, #p5 {
     display: none;
+    
 }
 
 section {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 360px;
+    width: 350px;
     height: 350px;
     margin: auto;
     box-shadow: 5px 5px 10px;
+}
+
+#resultado {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;   
+    line-height: 1.5;    
+}
+
+#resultado img {
+    width: 50%;
 }
 
 footer {

@@ -85,12 +85,7 @@ function pgtAnterior(evt) {
    
     document.querySelector('#p' + pgtAtual).style.display = 'none';
     pgtAtual--;
-    document.querySelector('#p' + pgtAtual).style.display = 'block';
-
-    if (pgtAtual >= 0) {
-        document.querySelector('#btn-antes').style.display = 'none';
-    }
-    
+    document.querySelector('#p' + pgtAtual).style.display = 'block';   
     
 }
 
@@ -111,7 +106,7 @@ function pgtPosterior(evt) {
 
         document.querySelector('#btn-depois').style.display = 'none';
         document.querySelector('#btn-antes').style.display = 'none';
-        document.querySelector('#btn-btn-salvar').style.display = 'block';
+        document.querySelector('#btn-btn-salvar').style.display = 'inline-block';
         
     }
     
