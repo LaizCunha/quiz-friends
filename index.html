@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script1.js"></script>    
+    <script defer src="script.js"></script>    
     <title>Quiz - Friends</title>  
     <link rel="shortcut icon" href="/img/espelho2.png">
     <link rel="stylesheet" href="style.css">  
@@ -17,26 +17,26 @@
     <section>
         <form id="dados" onsubmit="onFormDadosSubmit(event)">
             <div id="form-nome">
-                <label for="ipt-nome">Nome:</label> <br>
-                <input id="ipt-nome" type="text" onchange="onInputChange(event)"> <br>
+                <label for="ipt-nome" name="nome">Nome:</label> <br>
+                <input id="ipt-nome" type="text" name="nome"> <br>
             </div>          
             <div id="form-genero">
                 <label>Gênero:</label> <br>
-                <input id="rad-sex-m" type="radio" value="M" name="sexo" onchange="onInputChange(event)"><label>Masculino</label>
-                <input type="radio" name="sexo" id="rad-sex-f" value="F" onchange="onInputChange(event)"> <label>Feminino</label>
-                <input type="radio" name="sexo" id="rad-sex-o" onchange="onInputChange(event)" value="O"><label>Outro</label> <br>
+                <input id="rad-sex-m" type="radio" value="M" name="genero"><label for="rad-sex-m">Masculino</label>
+                <input type="radio" name="genero" id="rad-sex-f" value="F"> <label for="rad-sex-f">Feminino</label>
+                <input type="radio" name="genero" id="rad-sex-o" value="O"><label for="rad-sex-o">Outro</label> <br>
             </div>
             <div id="form-personagens">
                 <label for="ipt-personagem">Personagens favoritos:</label><br>
-                <input type="checkbox" name="personagens" id="chk-joey" value="Joey" onchange="onInputChange(event)"> <label for="chk-joey">Joey</label>
-                <input type="checkbox" name="personagens" id="chk-monica" value="Monica" onchange="onInputChange(event)"> <label for="chk-monica">Mônica</label>
-                <input type="checkbox" name="personagens" id="chk-ross" value="Ross" onchange="onInputChange(event)"> <label for="chk-ross">Ross</label>
-                <input type="checkbox" name="personagens" id="chk-rachel" value="Rachel" onchange="onInputChange(event)"><label for="chk-rachel">Rachel</label><br>
-                <input type="checkbox" name="personagens" id="chk-chandler" value="Chandler" onchange="onInputChange(event)"><label for="chk-chandler">Chandler</label>
-                <input type="checkbox" name="personagens" id="chk-phoebe" value="Phoebe" onchange="onInputChange(event)"><label for="chk-phoebe">Phoebe</label> <br>
+                <input type="checkbox" name="personagens" id="chk-joey" value="Joey"> <label for="chk-joey">Joey</label>
+                <input type="checkbox" name="personagens" id="chk-monica" value="Monica"> <label for="chk-monica">Mônica</label>
+                <input type="checkbox" name="personagens" id="chk-ross" value="Ross"> <label for="chk-ross">Ross</label>
+                <input type="checkbox" name="personagens" id="chk-rachel" value="Rachel"><label for="chk-rachel">Rachel</label><br>
+                <input type="checkbox" name="personagens" id="chk-chandler" value="Chandler"><label for="chk-chandler">Chandler</label>
+                <input type="checkbox" name="personagens" id="chk-phoebe" value="Phoebe"><label for="chk-phoebe">Phoebe</label> <br>
             </div>    
             <div id="btn-enviar">
-                <button id="btn-btn-enviar" onclick="salvarDadosForm()">Enviar</button>
+                <button id="btn-btn-enviar" type="submit">Iniciar</button>
             </div>     
         </form>
 
@@ -82,12 +82,12 @@
                 <input type="radio" name="p5" id="p5-e" value="true"><label for="p5-e">E - Ross</label><br><br>
             </div>
             <div id="btn-salvar">
-                <button id="btn-antes" onclick="pgtAnterior(event)"><<</button>
-                <button id="btn-depois" onclick="pgtPosterior(event)">>></button>
-                <button id="btn-btn-salvar" onclick="mostrarResultado(event)" style="display: none;">Salvar</button>
+                <button id="btn-antes" type="button" onclick="pgtAnterior(event)"><<</button>
+                <button id="btn-depois" type="button" onclick="pgtPosterior(event)">>></button>
+                <button id="btn-btn-salvar" type="submit" style="display: none;">Salvar</button>
             </div>        
         </form>
-        <div id="resultado" style="display: none;">
+        <div id="resultado" style="display: none;" >
             <p id="saudacao">PARABÉNS!</p>
             <p id="acertos">Você teve x% de acertos.</p>
             <p id="regarregar">Recarregue a página para recomeçar!</p>                        
